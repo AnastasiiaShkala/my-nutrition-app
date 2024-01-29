@@ -76,6 +76,7 @@ function App() {
           myNutrition && Object.values(myNutrition.totalNutrients)
             .map(({ label, quantity, unit }) =>
               <Nutrition
+                key={label}
                 label={label}
                 quantity={quantity}
                 unit={unit}
